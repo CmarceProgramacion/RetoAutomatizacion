@@ -17,43 +17,43 @@ public class EditorOptionModel {
         this.alignment = listEditor.get(4);
     }
 
-    public void setContent(String content) {
-        this.content = content;
-    }
-
-    public void setSize(String size) {
-        this.size = size;
-    }
-
-    public void setSource(String source) {
-        this.source = source;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-
-    public void setAlignment(String alignment) {
-        this.alignment = alignment;
-    }
-
     public String getContent() {
         return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
     }
 
     public String getSize() {
         return size;
     }
 
+    public void setSize(String size) {
+        this.size = size;
+    }
+
     public String getSource() {
         return source;
+    }
+
+    public void setSource(String source) {
+        this.source = source;
     }
 
     public String getColor() {
         return color;
     }
 
+    public void setColor(String color) {
+        this.color = color;
+    }
+
     public String getAlignment() {
         return alignment;
+    }
+
+    public void setAlignment(String alignment) {
+        this.alignment = alignment;
     }
 }

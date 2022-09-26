@@ -13,7 +13,7 @@ public class EnterValueToAlertAction implements Interaction {
         this.message = message;
     }
 
-    public static Performable withThedata(String message){
+    public static Performable withThedata(String message) {
         return Tasks.instrumented(EnterValueToAlertAction.class, message);
     }
 
