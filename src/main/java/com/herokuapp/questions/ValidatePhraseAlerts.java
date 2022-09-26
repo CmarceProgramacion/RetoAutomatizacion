@@ -5,15 +5,15 @@ import net.serenitybdd.screenplay.Question;
 
 import static com.herokuapp.userinterfaces.JavaScriptAlertsPage.LABEL_MESSAGE;
 
-public class ValidatePhrase implements Question<Boolean> {
+public class ValidatePhraseAlerts implements Question<Boolean> {
     private String phrase;
 
-    public ValidatePhrase(String phrase) {
+    public ValidatePhraseAlerts(String phrase) {
         this.phrase = phrase;
     }
 
-    public static ValidatePhrase verify(String phrase) {
-        return new ValidatePhrase(phrase);
+    public static ValidatePhraseAlerts verify(String phrase) {
+        return new ValidatePhraseAlerts(phrase);
     }
 
     @Override

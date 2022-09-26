@@ -25,7 +25,7 @@ public class SelectAlertPromptTask implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Click.on(LABEL_MENU_OPTIONS_EXAMPLES),
+                Click.on(LABEL_MENU_OPTIONS_EXAMPLES.of("JavaScript Alerts")),
                 Click.on(BUTTON_JS_PROMPT),
                 EnterValueToAlertAction.withThedata(message),
                 Switch.toAlert().andAccept()

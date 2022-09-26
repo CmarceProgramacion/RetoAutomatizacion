@@ -11,4 +11,9 @@ public class JavaScriptAlertsPage extends PageObject {
     public static final Target BUTTON_JS_PROMPT = Target.the("Button to access the JS prompt alert").locatedBy("//button[text()='Click for JS Prompt']");
     public static final Target LABEL_MESSAGE = Target.the("label corresponding to the message").located(By.id("result"));
 
+    public static final Target LABEL_MESSAGE_WINDOW = Target.the("label corresponding to the message of new window").locatedBy("//a[text()='Click Here']");
+    public static final Target LABEL_MESSAGE_NEW_WINDOW= Target.the("label corresponding to the message of new window").locatedBy("//div [@class='example']/child::h3");
+
+
+
 }

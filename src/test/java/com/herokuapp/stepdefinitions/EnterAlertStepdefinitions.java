@@ -1,6 +1,6 @@
 package com.herokuapp.stepdefinitions;
 
-import com.herokuapp.questions.ValidatePhrase;
+import com.herokuapp.questions.ValidatePhraseAlerts;
 import com.herokuapp.tasks.SelectAlertPromptTask;
 import com.herokuapp.tasks.SelectAlertConfirmTask;
 import com.herokuapp.tasks.SelectAlertAcceptTask;
@@ -57,7 +57,7 @@ public class EnterAlertStepdefinitions {
     @Then("verify that Result appears with the phrase {string}")
     public void verifyThatAppearsWithThePhrase(String phrase) {
         theActorInTheSpotlight().should(
-                GivenWhenThen.seeThat(ValidatePhrase.verify(phrase))
+                GivenWhenThen.seeThat(ValidatePhraseAlerts.verify(phrase))
         );
     }
 }

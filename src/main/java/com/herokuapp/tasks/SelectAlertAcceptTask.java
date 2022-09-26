@@ -19,7 +19,7 @@ public class SelectAlertAcceptTask implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Click.on(LABEL_MENU_OPTIONS_EXAMPLES),
+                Click.on(LABEL_MENU_OPTIONS_EXAMPLES.of("JavaScript Alerts")),
                 Click.on(BUTTON_JS_ALERT),
                 Switch.toAlert().andAccept()
         );
