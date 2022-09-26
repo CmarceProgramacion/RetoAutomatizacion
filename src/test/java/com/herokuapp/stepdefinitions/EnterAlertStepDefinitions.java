@@ -1,28 +1,19 @@
 package com.herokuapp.stepdefinitions;
 
 import com.herokuapp.questions.ValidatePhraseAlerts;
-import com.herokuapp.tasks.SelectAlertPromptTask;
-import com.herokuapp.tasks.SelectAlertConfirmTask;
 import com.herokuapp.tasks.SelectAlertAcceptTask;
+import com.herokuapp.tasks.SelectAlertConfirmTask;
+import com.herokuapp.tasks.SelectAlertPromptTask;
 import com.herokuapp.userinterfaces.HomePage;
-import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actions.Open;
-import net.serenitybdd.screenplay.actors.OnStage;
-import net.serenitybdd.screenplay.actors.OnlineCast;
 
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
-public class EnterAlertStepdefinitions {
-
-    @Before
-    public void initialConfing() {
-        OnStage.setTheStage(new OnlineCast());
-        OnStage.theActor("Lucia");
-    }
+public class EnterAlertStepDefinitions {
 
     @Given("that I access the herokuapp platform")
     public void thatIAccessTheHerokuappPlatform() {
@@ -51,8 +42,6 @@ public class EnterAlertStepdefinitions {
                 SelectAlertConfirmTask.confirmAlert()
         );
     }
-
-
 
     @Then("verify that Result appears with the phrase {string}")
     public void verifyThatAppearsWithThePhrase(String phrase) {
