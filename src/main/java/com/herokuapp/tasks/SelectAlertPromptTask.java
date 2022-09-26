@@ -1,6 +1,6 @@
 package com.herokuapp.tasks;
 
-import com.herokuapp.interactions.EnterAlertValue;
+import com.herokuapp.interactions.EnterValueToAlertAction;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
@@ -11,15 +11,15 @@ import net.serenitybdd.screenplay.actions.Switch;
 import static com.herokuapp.userinterfaces.HomePage.LABEL_MENU_OPTIONS_EXAMPLES;
 import static com.herokuapp.userinterfaces.JavaScriptAlertsPage.BUTTON_JS_PROMPT;
 
-public class SelectClickJsPrompt implements Task {
+public class SelectAlertPromptTask implements Task {
     private String message;
 
-    public SelectClickJsPrompt(String message) {
+    public SelectAlertPromptTask(String message) {
         this.message = message;
     }
 
-    public static Performable selectAlert(String message) {
-        return Tasks.instrumented(SelectJsaAlertTask.class, message);
+    public static Performable inputAlert(String message) {
+        return Tasks.instrumented(SelectAlertPromptTask.class, message);
     }
 
     @Override
@@ -27,7 +27,7 @@ public class SelectClickJsPrompt implements Task {
         actor.attemptsTo(
                 Click.on(LABEL_MENU_OPTIONS_EXAMPLES),
                 Click.on(BUTTON_JS_PROMPT),
-                EnterAlertValue.withThedata(message),
+                EnterValueToAlertAction.withThedata(message),
                 Switch.toAlert().andAccept()
         );
     }

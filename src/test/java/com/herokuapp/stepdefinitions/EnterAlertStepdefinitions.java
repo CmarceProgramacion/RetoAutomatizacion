@@ -1,7 +1,9 @@
 package com.herokuapp.stepdefinitions;
 
 import com.herokuapp.questions.ValidatePhrase;
-import com.herokuapp.tasks.SelectClickJsPrompt;
+import com.herokuapp.tasks.SelectAlertPromptTask;
+import com.herokuapp.tasks.SelectAlertConfirmTask;
+import com.herokuapp.tasks.SelectAlertAcceptTask;
 import com.herokuapp.userinterfaces.HomePage;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
@@ -31,22 +33,26 @@ public class EnterAlertStepdefinitions {
 
     @When("I select JS alert and interact with the alert")
     public void iSelectJSAlertAndInteractWithTheAlert() {
-//        theActorInTheSpotlight().attemptsTo(
-//                SelectJsaAlertTask.selectAlert()//
-//        );
-    }
-
-    @Then("I verify that {string} appears")
-    public void iVerifyThatAppears(String string) {
-
-    }
-
-    @When("I select JS Prompt, interact with the alert and enter the phrase {string}.")
-    public void iSelectJSPromptInteractWithTheAlertAndEnterThePhrase(String phrase) {
         theActorInTheSpotlight().attemptsTo(
-                SelectClickJsPrompt.selectAlert(phrase)
+                SelectAlertAcceptTask.acceptAlert()
         );
     }
+
+    @When("I select JS Prompt interact with the alert and enter the phrase {string}")
+    public void iSelectJSPromptInteractWithTheAlertAndEnterThePhrase(String phrase) {
+        theActorInTheSpotlight().attemptsTo(
+                SelectAlertPromptTask.inputAlert(phrase)
+        );
+    }
+
+    @When("I select JS Confirm and interact with the alert")
+    public void iSelectJSConfirmAndInteractWithTheAlert() {
+        theActorInTheSpotlight().attemptsTo(
+                SelectAlertConfirmTask.confirmAlert()
+        );
+    }
+
+
 
     @Then("verify that Result appears with the phrase {string}")
     public void verifyThatAppearsWithThePhrase(String phrase) {

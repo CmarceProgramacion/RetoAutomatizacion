@@ -18,6 +18,7 @@ public class ValidatePhrase implements Question<Boolean> {
 
     @Override
     public Boolean answeredBy(Actor actor) {
-        return phrase.contentEquals(LABEL_MESSAGE.resolveFor(actor).getTextContent().substring(13));
+        //return phrase.contentEquals(LABEL_MESSAGE.resolveFor(actor).getTextContent().substring(13));
+        return LABEL_MESSAGE.resolveFor(actor).getTextContent().contains(phrase);
     }
 }

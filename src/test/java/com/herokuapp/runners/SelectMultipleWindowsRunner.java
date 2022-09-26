@@ -6,12 +6,12 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/enter_alerts.feature",
+        features = "src/test/resources/features/select_multiple_windows.feature",
         glue = "com.herokuapp.stepdefinitions",
-        tags = "@All",
+        tags = "@Windows",
         plugin = {"pretty"},
         snippets = CucumberOptions.SnippetType.CAMELCASE
 )
 
-public class EnterAlertsRunner {
+public class SelectMultipleWindowsRunner {
 }

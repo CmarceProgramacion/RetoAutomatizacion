@@ -6,15 +6,15 @@ import net.serenitybdd.screenplay.Interaction;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Tasks;
 
-public class EnterAlertValue implements Interaction {
+public class EnterValueToAlertAction implements Interaction {
     private String message;
 
-    public EnterAlertValue(String message) {
+    public EnterValueToAlertAction(String message) {
         this.message = message;
     }
 
     public static Performable withThedata(String message){
-        return Tasks.instrumented(EnterAlertValue.class, message);
+        return Tasks.instrumented(EnterValueToAlertAction.class, message);
     }
 
     @Override
