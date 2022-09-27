@@ -11,10 +11,9 @@ public enum OptionEditorEnum {
     OPTION_STYLE("style"),
     OPTION_TEXT_COLOR("Text color");
 
-
     private String option;
 
-    private OptionEditorEnum(String option) {
+    OptionEditorEnum(String option) {
         this.option = option;
     }
 

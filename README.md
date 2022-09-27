@@ -31,7 +31,7 @@ Proyecto de Automatización de alertas JavaScript, Iframes y múltiples ventanas
 
 #### Características del Proyecto
 
-En la construcción del proyecto Herokuapp se implementa:
+En la construcción del proyecto de automatizacion web en la plataforma Herokuapp se implementa:
 
 - Patrón de diseño de Screemplay.
 - Framework SerenityBDD.
@@ -45,7 +45,7 @@ En la construcción del proyecto Herokuapp se implementa:
 | Serenity         | 3.3.4   |
 | SerenityCucumber | 3.3.4   |
 | SerenityEnsure   | 3.2.5   |
-| Slf4jSimple      | 1.7.30  |
+| Slf4jSimple      | 1.7.36  |
 | Junit            | 4.13.2  |
 
 #### Precondiciones
@@ -60,6 +60,6 @@ En la construcción del proyecto Herokuapp se implementa:
 Para la ejecución del proyecto se debe implementar el siguiente comando en el terminal en el directorio raíz del proyecto:
 
 ```sh
-gradle test -Denvironment=stg
+gradle clean test -Denvironment=stg
 ```
 

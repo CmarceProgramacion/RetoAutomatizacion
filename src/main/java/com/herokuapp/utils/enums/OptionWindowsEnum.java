@@ -5,7 +5,7 @@ public enum OptionWindowsEnum {
     TITLE_MAIN_WINDOWS("The Internet");
     private String option;
 
-    private OptionWindowsEnum(String option) {
+    OptionWindowsEnum(String option) {
         this.option = option;
     }
 

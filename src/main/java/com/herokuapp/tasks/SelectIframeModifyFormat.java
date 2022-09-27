@@ -16,7 +16,6 @@ import static com.herokuapp.utils.enums.OptionEditorEnum.*;
 public class SelectIframeModifyFormat implements Task {
     private EditorOptionModel editor;
 
-
     public SelectIframeModifyFormat(EditorOptionModel editor) {
         this.editor = editor;
     }

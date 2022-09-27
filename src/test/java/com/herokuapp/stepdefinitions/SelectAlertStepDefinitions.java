@@ -32,7 +32,7 @@ public class SelectAlertStepDefinitions {
     @When("I select JS Prompt interact with the alert and enter the phrase {string}")
     public void iSelectJSPromptInteractWithTheAlertAndEnterThePhrase(String phrase) {
         theActorInTheSpotlight().attemptsTo(
-                SelectAlertPromptTask.inputAlert(phrase)
+                SelectAlertPromptTask.writeInAlert(phrase)
         );
     }
 

@@ -18,6 +18,6 @@ public class ValidatePhraseWindows implements Question<Boolean> {
 
     @Override
     public Boolean answeredBy(Actor actor) {
-        return LABEL_MESSAGE_NEW_WINDOW.resolveFor(actor).getTextContent().contains("New Window");
+        return LABEL_MESSAGE_NEW_WINDOW.resolveFor(actor).getTextContent().contains(phrase);
     }
 }

@@ -19,7 +19,7 @@ public class SelectAlertPromptTask implements Task {
         this.message = message;
     }
 
-    public static Performable inputAlert(String message) {
+    public static Performable writeInAlert(String message) {
         return Tasks.instrumented(SelectAlertPromptTask.class, message);
     }
 
@@ -28,7 +28,7 @@ public class SelectAlertPromptTask implements Task {
         actor.attemptsTo(
                 Click.on(LABEL_MENU_OPTIONS_EXAMPLES.of(OPTIONS_EXAMPLES_ALERTS.getOption())),
                 Click.on(BUTTON_JS_PROMPT),
-                EnterValueToAlertAction.withThedata(message),
+                EnterValueToAlertAction.withTheData(message),
                 Switch.toAlert().andAccept()
         );
     }

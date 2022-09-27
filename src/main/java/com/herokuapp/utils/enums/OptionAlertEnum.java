@@ -1,11 +1,10 @@
 package com.herokuapp.utils.enums;
 
 public enum OptionAlertEnum {
-    OPTIONS_EXAMPLES_ALERTS("JavaScript Alerts"),
-    OPTION_TEXT_COLOR("Text color");
+    OPTIONS_EXAMPLES_ALERTS("JavaScript Alerts");
     private String option;
 
-    private OptionAlertEnum(String option) {
+    OptionAlertEnum(String option) {
         this.option = option;
     }
 

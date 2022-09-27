@@ -13,13 +13,12 @@ public class EnterValueToAlertAction implements Interaction {
         this.message = message;
     }
 
-    public static Performable withThedata(String message) {
+    public static Performable withTheData(String message) {
         return Tasks.instrumented(EnterValueToAlertAction.class, message);
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
         Serenity.getDriver().switchTo().alert().sendKeys(message);
-
     }
 }
