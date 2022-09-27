@@ -10,7 +10,7 @@ import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.Switch;
 
 import static com.herokuapp.userinterfaces.HomePage.LABEL_MENU_OPTIONS_EXAMPLES;
-import static com.herokuapp.userinterfaces.JavaScriptAlertsPage.*;
+import static com.herokuapp.userinterfaces.IframeEditorPage.*;
 import static com.herokuapp.utils.enums.OptionEditorEnum.*;
 
 public class SelectIframeModifyFormat implements Task {

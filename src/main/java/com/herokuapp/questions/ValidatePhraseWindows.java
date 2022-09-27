@@ -3,7 +3,7 @@ package com.herokuapp.questions;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 
-import static com.herokuapp.userinterfaces.JavaScriptAlertsPage.LABEL_MESSAGE_NEW_WINDOW;
+import static com.herokuapp.userinterfaces.MultipleWindowsPage.LABEL_MESSAGE_NEW_WINDOW;
 
 public class ValidatePhraseWindows implements Question<Boolean> {
     private String phrase;

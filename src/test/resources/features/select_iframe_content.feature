@@ -1,13 +1,17 @@
+#Autor: Claudia Nieto
+#Email: cmarce86@yahoo.es
+#language: en
+
 @Iframe
-Feature: Validate that a text is typed in the editor and the formatting is changed
+Feature: Validate changes to a text in the editor
   As an automator
   I want to access the editor to write a text and change its formatting
-  to verify the content written in the editor
+  to verify the changes written in the editor
 
 
-  Scenario Outline: Validate the content and formatting written in the editor
+  Scenario Outline: Validate the formatting written in the editor
     Given that I access the herokuapp platform
-    When I enter the content to the text editor with the format
+    When I enter the content to the text editor with these formats
       | <content> | <size> | <source> | <color> | <alignment> |
     Then I check the content with the format "<alignment>"
 

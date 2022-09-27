@@ -9,8 +9,8 @@ import net.serenitybdd.screenplay.actions.Switch;
 import net.serenitybdd.screenplay.ensure.Ensure;
 
 import static com.herokuapp.userinterfaces.HomePage.LABEL_MENU_OPTIONS_EXAMPLES;
-import static com.herokuapp.userinterfaces.JavaScriptAlertsPage.LABEL_MESSAGE_NEW_WINDOW;
-import static com.herokuapp.userinterfaces.JavaScriptAlertsPage.LABEL_MESSAGE_WINDOW;
+import static com.herokuapp.userinterfaces.MultipleWindowsPage.LABEL_MESSAGE_NEW_WINDOW;
+import static com.herokuapp.userinterfaces.MultipleWindowsPage.LABEL_MESSAGE_WINDOW;
 import static com.herokuapp.utils.enums.OptionWindowsEnum.OPTIONS_EXAMPLES_MULTIPLE_WINDOWS;
 import static com.herokuapp.utils.enums.OptionWindowsEnum.TITLE_MAIN_WINDOWS;
 

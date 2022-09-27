@@ -8,6 +8,7 @@ public enum OptionEditorEnum {
     OPTION_SELECT_ALL("Select all"),
     OPTION_FONT_SIZES("Font sizes"),
     OPTION_FONTS("Fonts"),
+    OPTION_STYLE("style"),
     OPTION_TEXT_COLOR("Text color");
 
 

@@ -6,12 +6,12 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/enter_alerts.feature",
-        glue = "com.herokuapp.stepdefinitions",
-        tags = "@All",
+        features = "src/test/resources/features/select_iframe_content.feature",
+        glue= "com.herokuapp.stepdefinitions",
+        tags = "@Iframe",
         plugin = {"pretty"},
         snippets = CucumberOptions.SnippetType.CAMELCASE
 )
 
-public class EnterAlertsRunner {
+public class SelectIframeContentRunner {
 }

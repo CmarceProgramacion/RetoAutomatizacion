@@ -13,7 +13,7 @@ import net.serenitybdd.screenplay.actions.Open;
 
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
-public class EnterAlertStepDefinitions {
+public class SelectAlertStepDefinitions {
 
     @Given("that I access the herokuapp platform")
     public void thatIAccessTheHerokuappPlatform() {

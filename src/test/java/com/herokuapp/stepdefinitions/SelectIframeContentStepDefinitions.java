@@ -12,9 +12,9 @@ import java.util.List;
 
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
-public class EnterIframeContentStepDefinitions {
-    @When("I enter the content to the text editor with the format")
-    public void iEnterTheContentToTheTextEditorWithTheFormat(List<List<String>> dataEditor) {
+public class SelectIframeContentStepDefinitions {
+    @When("I enter the content to the text editor with these formats")
+    public void iEnterTheContentToTheTextEditorWithTheseFormats(List<List<String>> dataEditor) {
         EditorOptionModel editor = new EditorOptionModel(dataEditor.get(0));
         theActorInTheSpotlight().attemptsTo(
                 SelectIframeModifyFormat.modifyFormat(editor)

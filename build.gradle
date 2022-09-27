@@ -34,8 +34,6 @@ ext {
 
 dependencies {
     implementation group: 'junit', name: 'junit', version: "${junitVersion}"
-    //implementation group: 'net.serenity-bdd', name: 'serenity-junit', version: "${serenityVersion}"
-    //implementation group: 'net.serenity-bdd', name: 'serenity-core', version: "${serenityVersion}"
     implementation group: 'net.serenity-bdd', name: 'serenity-cucumber', version: "${serenityCucumberVersion}"
     implementation group: 'net.serenity-bdd', name: 'serenity-screenplay', version: "${serenityVersion}"
     implementation group: 'net.serenity-bdd', name: 'serenity-screenplay-webdriver', version: "${serenityVersion}"

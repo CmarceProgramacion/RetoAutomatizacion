@@ -5,7 +5,8 @@ import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.actions.Switch;
 import net.serenitybdd.screenplay.actors.OnStage;
 
-import static com.herokuapp.userinterfaces.JavaScriptAlertsPage.TEXT_AREA_EDITOR;
+import static com.herokuapp.userinterfaces.IframeEditorPage.TEXT_AREA_EDITOR;
+import static com.herokuapp.utils.enums.OptionEditorEnum.OPTION_STYLE;
 
 public class ValidateFormat implements Question<Boolean> {
     private String alignment;
@@ -23,6 +24,6 @@ public class ValidateFormat implements Question<Boolean> {
         OnStage.theActorInTheSpotlight().attemptsTo(
                 Switch.toFrame(0)
         );
-        return TEXT_AREA_EDITOR.resolveFor(actor).getAttribute("style").contains(alignment.substring(6));
+        return TEXT_AREA_EDITOR.resolveFor(actor).getAttribute(OPTION_STYLE.getOption()).contains(alignment.substring(6));
     }
 }

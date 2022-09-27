@@ -1,14 +1,18 @@
-@All
-Feature: validate that the alert is accepted
+#Autor: Claudia Nieto
+#Email: cmarce86@yahoo.es
+#language: en
+
+@Alerts
+Feature: validate that the alerts
   As an automator
-  I want to accept the javaScript alert
-  To perform the SQA automation challenge
+  I want to use javaScript alerts
+  To validate its functionality
 
   Background: I access the herokuapp testing platform.
     Given that I access the herokuapp platform
 
   @CaseOne
-  Scenario Outline:validate when I select JS alert and select accept
+  Scenario Outline:validate the JS alert accept
     When I select JS alert and interact with the alert
     Then verify that Result appears with the phrase "<phrase>"
     Examples:
@@ -17,7 +21,7 @@ Feature: validate that the alert is accepted
 
 
   @CaseTwo
-  Scenario Outline:validate when I select JS Confirm and select accept alert
+  Scenario Outline:validate the JS Confirm
     When  I select JS Confirm and interact with the alert
     Then verify that Result appears with the phrase "<phrase>"
 
@@ -27,7 +31,7 @@ Feature: validate that the alert is accepted
 
 
   @CaseThree
-  Scenario Outline: validate when I select JS Prompt and select accept the alert
+  Scenario Outline: validate the JS Prompt
     When  I select JS Prompt interact with the alert and enter the phrase "<phrase>"
     Then verify that Result appears with the phrase "<phrase>"
 

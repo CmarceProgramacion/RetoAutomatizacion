@@ -1,3 +1,7 @@
+#Autor: Claudia Nieto
+#Email: cmarce86@yahoo.es
+#language: en
+
 @Windows
 Feature:Validate the content of multiple windows
   as an automator
