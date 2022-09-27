@@ -54,6 +54,9 @@ En la construcción del proyecto de automatizacion web en la plataforma Herokuap
 - [x] 1.1: Configurar variable de entorno JAVA_HOME
 - [x] 2: Instar Gradle en su versión 7.2
 - [x] 2.1: Configurar variable de entorno GRADLE_HOME
+- [x] 3: Para ejecutar Edge se debe usar el parametro comentado en serenity.properties:
+  - webdriver.driver=edge
+
 
 #### Ejecución del proyecto
 
